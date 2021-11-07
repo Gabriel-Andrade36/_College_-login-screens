@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Novo curso</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">Plataforma de cursos</div>
+
+      <ul>
+        <li><a href=""> home</a></li>
+
+        <li><a href="">novo usuário</a></li>
+
+        <li><a href="" class="actived">novo curso</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container">
+        <form
+          action="https://6183e1e491d76c00172d1c58.mockapi.io/User"
+          method="post"
+          target="_blank"
+        >
+          <div class="labels">
+            <div>
+              <label for="name">Nome</label>
+              <input type="text" id="name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label for="password">Senha</label>
+              <input type="password" id="password" />
+            </div>
+          </div>
+
+          <div class="button">
+            <button type="submit">Cadastrar usuário</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
