@@ -11,26 +11,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="toggle-switch.css" />
     <title>Novo curso</title>
   </head>
 
   <body>
     <nav>
       <div class="logo">Plataforma de cursos</div>
-
       <ul>
-        <li><a href=""> home</a></li>
+        <li><a href="../home.html"> home</a></li>
 
-        <li><a href="">novo usuário</a></li>
+        <li><a href="newUser.html">novo usuário</a></li>
 
-        <li><a href="" class="actived">novo curso</a></li>
+        <li><span class="actived">novo curso</span></li>
       </ul>
     </nav>
 
     <main>
       <div class="container">
         <form
-          action="https://6183e1e491d76c00172d1c58.mockapi.io/User"
+          action="https://6183e1e491d76c00172d1c58.mockapi.io/Course"
           method="post"
           target="_blank"
         >
@@ -40,12 +40,16 @@
               <input type="text" id="name" />
             </div>
             <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" />
+              <label for="description">Descrição</label>
+              <input type="text" id="description" />
             </div>
             <div>
-              <label for="password">Senha</label>
-              <input type="password" id="password" />
+              <label for="photoURL">Url da foto</label>
+              <input type="url" id="photoURL" />
+            </div>
+            <div>
+              <label for="hoursQuantity">Quantidade de horas</label>
+              <input type="text" id="hoursQuantity" />
             </div>
           </div>
 

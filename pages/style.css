@@ -9,20 +9,20 @@ body {
 }
 
 body {
-  background: rgb(233, 241, 241);
+  background: rgb(17, 17, 17);
   display: grid;
   grid-template-rows: 3.5rem;
 }
 
 nav {
   height: 100%;
-  background: rgb(255, 255, 255);
+  background: rgb(32, 32, 32);
   display: grid;
   grid-template-columns:
     10%
     80%;
   place-items: center;
-  box-shadow: 1px 1px 15px 2px rgb(198, 214, 214);
+  box-shadow: 1px 1px 15px 2px rgb(17, 17, 17);
 }
 
 .logo {
@@ -31,9 +31,10 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 45px;
   list-style: none;
   padding: 0;
+  margin-top: 15px;
 }
 
 nav li {
@@ -41,37 +42,42 @@ nav li {
 }
 
 nav li a {
-  border-width: 1px;
+  border-width: 2px;
 
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-style: solid;
-
-  border-bottom-color: rgb(192, 192, 192);
-
-  font-size: 20px;
+  font-size: 14px;
   font-style: unset;
   text-decoration: none;
-  color: rgb(192, 192, 192);
+  color: rgb(255, 255, 255);
+}
+
+nav li span {
+  font-size: 14px;
 }
 
 nav li a:hover {
-  text-shadow: 1px 1px 4px rgb(240, 239, 239);
-}
+  color: rgba(191, 0, 255, 0.316);
 
-.actived {
-  color: black;
-  border-bottom-color: black;
-
-  border-width: 1px;
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-style: solid;
-  border-bottom-color: black;
 
-  text-shadow: 2px 2px 4px rgb(225, 225, 225);
+  color: rgb(255, 255, 255);
+  border-bottom-color: rgb(192, 192, 192);
+}
+
+.actived {
+  color: rgb(255, 0, 204);
+  border-bottom-color: rgb(255, 255, 255);
+
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: none;
+  border-bottom-color: rgb(191, 0, 255);
+
+  text-shadow: 1px 1px 4px rgb(21, 21, 21);
 }
 
 main {
@@ -81,44 +87,55 @@ main {
   display: grid;
   align-items: center;
   justify-content: center;
-
-  margin-top: -40px;
 }
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: rgb(32, 32, 32);
 
   width: 400px;
-  height: 320px;
 
-  border-radius: 15px;
-  box-shadow: 1px 1px 15px 4px rgb(198, 214, 214);
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px 1px rgb(12, 12, 12);
+
+  color: rgb(255, 255, 255);
 }
 
 .container div input {
+  color: rgb(191, 0, 255);
+  color: white;
+
   width: 240px;
   height: 25px;
 
   display: flex;
 
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 14px;
 
-  background: rgb(227, 242, 242);
+  background: rgb(17, 17, 17);
 
-  border-style: solid;
-  border-width: 1px;
-
+  /* border-style: solid; */
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-color: black;
+  border-width: 2px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    rgb(191, 0, 255),
+    rgb(201, 6, 211),
+    rgb(223, 1, 179),
+    rgb(255, 0, 204)
+  );
 }
 
 .container label {
-  font-size: 16px;
+  font-size: 15px;
   padding-left: 2px;
 }
 
@@ -126,24 +143,30 @@ main {
   font-size: 16px;
 
   margin-top: 40px;
-  width: 200px;
-  height: 30px;
+  width: 245px;
+  height: 44px;
+  border-radius: 4px;
 
-  background: rgb(227, 242, 242);
+  background: rgb(191, 0, 255);
+  background-image: linear-gradient(
+    90deg,
+    rgb(191, 0, 255),
+    rgb(201, 6, 211),
+    rgb(223, 1, 179),
+    rgb(255, 0, 204)
+  );
+  border-style: none;
+  border-width: 2px;
 
-  border-style: solid;
-  border-width: 1px;
-
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-color: black;
+  transition: background 0.2s;
+  color: rgb(255, 255, 255);
 }
 
 .container button:hover {
-  border-width: 2px;
+  background: rgba(191, 0, 255, 0.255);
+  cursor: pointer;
 }
 .container input:hover {
   height: 24px;
-  border-width: 2px;
+  border-width: 3px;
 }
