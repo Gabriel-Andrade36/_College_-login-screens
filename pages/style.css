@@ -167,6 +167,6 @@ main {
   cursor: pointer;
 }
 .container input:hover {
-  height: 24px;
-  border-width: 3px;
+  /* height: 24px;
+  border-width: 3px; */
 }
